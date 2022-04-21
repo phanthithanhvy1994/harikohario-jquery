@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ja"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!-- InstanceBeginEditable name="page-title" -->
+<title>求人詳細｜ハリコとハリオ｜美容鍼求人サイト</title>
+<!-- S.E.O -->
+<meta name="description" content="ハリコとハリオ,美容鍼求人サイト" />
+<meta name="keywords" content="ハリコとハリオ,美容鍼求人サイト" />
+<!-- InstanceEndEditable -->
+<meta name="author" content="ハリコとハリオ" />
+<meta name="copyright" content="ハリコとハリオ" />
+<meta name="robots" content="ALL" />
+<!-- favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+<!--style-->
+<link type="text/css" rel="stylesheet" href="css/plugins.css" />
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/media_query.css" />
+<!--jquery libs-->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
+<!-- InstanceBeginEditable name="page-custom" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body class="subpage">
+
+    <div id="outside">
+
+        <!-- header -->
+        <div id="header">
+            
+            <div id="header_pc">
+                <div class="head_linktop">
+                    <div class="container">
+                        <ul>
+                            <li><a href="#">ご利用規約</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <h1 class="head_logo">
+                        <a href="index.html">
+                            <img class="_logo" src="images/tem_logo.png" alt="ハリコとハリオ/美容鍼求人サイト">
+                            <span class="_txt">
+                                <span class="c1">美容鍼・</span>
+                                <span class="c2">美容鍼灸</span>の<br>
+                                シゴトが見つかる！
+                            </span>
+                        </a>
+                    </h1>
+                    <div class="head_boxnavi">
+                        <div class="head_info">                        
+                            <p>こんにちは、ゲストさん</p>
+                            <ul>
+                                <li><a href="#">最近見た求人を見る</a></li>
+                                <li><a href="#">会員登録 / ログイン</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="head_info">                        
+                            <p><a href="#">こんにちは、吉田さん</a></p>
+                            <ul>
+                                <li><a href="#">最近見た求人を見る</a></li>
+                                <li><a href="#">履歴書を編集する</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="head_navi">
+                            <ul>
+                                <li><a class="active" href="job.html">注目求人</a></li>
+                                <li><a href="event.html">イベント</a></li>
+                                <li><a href="column.html">コラム</a></li>
+                                <li><a href="job.html#search_job">求人検索</a></li>
+                                <li><a href="howto.html">活用方法</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="head_link"><a href="#">掲載希望<br>治療院様へ</a></p>
+                </div>
+            </div>
+
+            <div id="header_smp">
+                <div class="header-menu">
+                    <h1>
+                        <a href="index.html">
+                            <span>ハリコとハリオ/美容鍼求人サイト</span>
+                            <img src="images/temp_logosmp.png" alt="美容鍼求人サイト">
+                        </a>
+                    </h1>
+                    <div class="menu">
+                        <ul class="menu__link">
+                            <li><a href="login.html">ログイン</a></li>
+                            <li><a href="memberform.html">会員登録</a></li>
+                        </ul>
+                        <div class="menu__hamburger">
+                            <span class="text_menu">メニュー</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-panel">
+                    <div class="line">
+                        <p class="line__title"><span>カンタン会員登録でラクラク求人探し！</span></p>
+                        <p class="line__btn"><a href="#"><span>LINE&nbsp;で登録</span></a></p>
+                        <p class="line__link"><a href="#">メールアドレスで登録</a></p>
+                    </div>
+                    <!-- <p class="header-hello"><span>こんにちは、吉田さん</span></p> -->
+                    <ul class="navbox-favorite">
+                        <li><a class="nav__icon01" href="job.html">注目求人</a></li>
+                        <li><a class="nav__icon02" href="event.html">イベント</a></li>
+                        <li><a class="nav__icon03" href="column.html">コラム</a></li>
+                    </ul>
+                    <!-- <ul class="navbox-favorite __login">
+                        <li><a class="nav__icon08" href="#">最近見た<br>求人を見る</a></li>
+                        <li><a class="nav__icon09" href="#">履歴書を<br>編集する</a></li>
+                        <li><a class="nav__icon10" href="#">登録情報を<br>変更する</a></li>
+                    </ul> -->
+                    <ul class="navbox">
+                        <li><a class="nav__icon04" href="job.html#search_job">求人検索</a></li>
+                        <li><a class="nav__icon05" href="#">最近見た求人</a></li>
+                        <li><a class="nav__icon06" href="howto.html">サイト活用方法</a></li>
+                        <li><a class="nav__icon07" href="aboutus.html">運営企業</a></li>
+                        <!-- <li><a class="nav__icon01" href="../job.html">注目求人</a></li>
+                        <li><a class="nav__icon02" href="../event.html">イベント</a></li>
+                        <li><a class="nav__icon03" href="../column.html">コラム</a></li>
+                        <li><a class="nav__icon04" href="../job.html#search_job">求人検索</a></li>
+                        <li><a class="nav__icon06" href="../howto.html">サイト活用方法</a></li>
+                        <li><a class="nav__icon07" href="../aboutus.html">運営企業</a></li> -->
+                    </ul>
+                    <div class="header-job">
+                        <p class="navbox-job__title">求人希望企業の方へ<span class="-job_icon"></span></p>
+                        <ul class="navbox-job__link">
+                            <li><a href="terms.html">ご利用規約</a></li>
+                            <li><a href="published.html">掲載規約</a></li>
+                            <li><a href="privacypolicy.html">個人情報保護方針</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><!--#header-->
+
+        <!-- content -->
+        <div id="wrapper" style="min-height: 500px">
+        <!-- InstanceBeginEditable name="page-content" -->
+            <div id="jobdetail">
+                <h3 class="screen_title04">求人詳細</h3>
+                <div class="jobdet-container">
+                    <p class="jobdetail-p01r">麻布ハリーク</p>
+                    <h4 class="jobdetail-text02">「世界一の美容鍼灸サロン」を目指してともに美しく成長する方を求めています</h4>
+                    <div class="jobdetail-block01">
+                        <div class="jobdetail-slidew">
+                            <div class="jobdetail-slide">
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                                <div><img src="images/jobdetail-slide.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="ind_tab01_group">
+                            <dl>
+                                <dt>給与</dt>
+                                <dd>テキストテキストテキスト</dd>
+                                <dt class="dt02">勤務地</dt>
+                                <dd>テキストテキストテキスト</dd>
+                                <dt class="dt-jobdetail">勤務時間</dt>
+                                <dd>テキストテキストテキスト</dd>
+                            </dl>
+                            <ul class="ind_tab01_list">
+                                <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4 class="jobdetail-tit-02">代表に聞いてみました！</h4>
+                    <div class="jobdetail-tblvertic">
+                        <div class="img"><img src="images/jobdetail-img01.png" alt=""></div>
+                        <p class="jobdetail-textvel"><span class="jobdetail-text-fl">麻布ハリーク 代表<br>岡本 真理</span></p>
+                    </div>
+                    <div class="jobdetail-psmp">
+                        <h5 class="jobdetail-text03">これまでどんな想いで店舗を運営してこられましたか？</h5>
+                        <p>私たちが2009年に麻布ハリークをオープンした当時、「鍼灸」と「美容」のイメージはまったくかけ離れたものでした。</p>
+                        <p>当時、「美容鍼灸専門サロン」は存在すらほとんどありません。</p>
+                        <p>私たちは美容鍼灸のリーディングカンパニーとして、「鍼灸のイメージを変える」ところからスタートしました。</p>
+                        <p>内装はプロのインテリアコーディネーターさんに依頼。</p>
+                        <p>ロゴやユニフォームなども、これまでの鍼灸業界にはないデザインを採用。</p>
+                        <p>そのデザイン性の高さが評判を呼び、商業インテリアや商業建築の雑誌にも何度か掲載されています。</p>
+                        <p class="jobdetail-mt01">もちろん肝心の技術にもとことんこだわり抜きました。</p>
+                        <p>開業当初から「痛みなく結果を出す美容鍼」の技術を磨き続けています。</p>
+                        <p class="jobdetail-mt01">まず、美に対するすべての施術を求められる美容クリニックにその技術を認めていただきました。</p>
+                        <p>シロノクリニックさん、東京ミッドタウンクリニックノアージュさんなど、都内有数の美容クリニックへの技術提供を実現、同時に全国各地の鍼灸師に、私たちの美容鍼技術をお伝えしてきました。</p>
+                        <p>これまでに直接技術指導した鍼灸師の先生は1,000名を超えます。</p>
+                        <p class="jobdetail-mt01 jobdetail-bt01">おかげさまで、この10年間でたくさんの仲間も増え、鍼灸のイメージは私たちが想像していた以上に明るくなりました。新しい時代がやってきたことを実感しています。</p>
+                        <h5 class="jobdetail-text03">この先どんな将来を目指しますか？</h5>
+                        <p>開業から10年間で、美容鍼を取り巻く環境は大きく変わりました。<br>インスタグラムなどの流行で、たくさんの著名人やインスタグラマーの方々が日々美容鍼の写真を投稿されるのが日常になり、テレビでも美容鍼が紹介されるようになりました。<br>私たちが最初に目指した「鍼灸のイメージを変える！」という目標は達成できたと自負しています。</p>
+                        <p class="jobdetail-mt01">次の新たな目標は、スタッフと一緒に考えて作りました。<br>「世界一の美容鍼灸を提供する」という目標です。<br>麻布ハリークは拡大路線の多店舗展開を目指していません。全国の美容鍼を求めるお客様へは、私たちの技術を伝えた仲間の鍼灸師さんたちがその技術を広めてくれます。</p>
+                        <p class="jobdetail-mt01 jobdetail-bt01">ハリークが目指すべきこと。<br>それは美容鍼の技術の質と、接遇や空間の質を高めることです。<br>日本全国のみならず、「世界中の人々が私たちの美容鍼を受けるために日本を訪れる」くらいの美容鍼灸サロンになりたいと本気で思っています。</p>
+                        <h5 class="jobdetail-text03">どんな方と一緒に働きたいですか？</h5>
+                        <p>いちばん大切なことは、「私も麻布ハリークで世界一の美容鍼灸を提供したい！」と本気で目指していただける方と一緒に働きたいです。
+                        そして、私たちのクレドや、麻布ハリークがこれまで大切にしてきた文化や価値観を尊重し、より素敵に発展させてくださる方に入社いただきたいですね。</p>
+                        <p class="jobdetail-mt01">また、心身ともに健康であるということも、とても大切です。<br>鍼灸師自らが美しく健康でいなければ、お客様を美しく健康にすることはできないからです。</p>
+                        <p class="jobdetail-mt01">だからこそ、働きやすさにはこだわっています。</p>
+                        <p class="jobdetail-mt01">当社では有給消化率が80%を超えているのですが、しっかり休みを取って自身の体調や美容も整えて元気に働いていただきたいと思っています。</p>
+                        <p class="jobdetail-mt01 jobdetail-bt01">最後に、私たちと最低5年間は一緒に働く覚悟のある方を優先して採用しています。技術と文化を身に着けるのに、それだけの時間をかけるからこそとご理解ください。</p>
+                    </div>
+                    <h4 class="jobdetail-tit-03">先輩スタッフに聞いてみました！</h4>
+                    <div class="jobdetail-text04">
+                        <p class="jobdetail-blue">ひとことで、麻布ハリークってどんな職場？</p>
+                        <p class="jobdetail-blue01">・お客様と同じくらい仲間を大切にする職場<span class="jobdetail_fontnormal">（高橋）</span><br>・美容鍼灸を極めたい人が働いている職場<span class="jobdetail_fontnormal">（牧野）</span><br>・お客様が信頼して身体を預けてくださる場所<span class="jobdetail_fontnormal">（竹島）</span></p>
+                    </div>
+                    <div class="img jobdetail_imgsmp">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/knDSS_j4uvA?list=PLRhlTlpDUWsw70vZAkJgALJ1yhgYsqDGx" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <ul class="jobdetail-appl">
+                        <li><a href="#" style="background-image: url(images/jobdetail_img04.png);">牧野歩さん<br class="pc"><span class="jobdetail-mrsmp">インタビュー</span></a></li>
+                        <li><a href="#" style="background-image: url(images/jobdetail_img04.png);">牧野歩さん<br class="pc"><span class="jobdetail-mrsmp">インタビュー</span></a></li>
+                        <li><a href="#" style="background-image: url(images/jobdetail_img04.png);">牧野歩さん<br class="pc"><span class="jobdetail-mrsmp">インタビュー</span></a></li>
+                    </ul>
+                    <div class="jobdetail-text05">
+                        <div class="jobdetail_text05-l">
+                            <p class="jobdetail-title-l">施術内容</p>
+                            <div class="jobdetail-dl jobdetail-p04">
+                                <dl>
+                                    <dt>● 美容鍼：</dt>
+                                    <dd>立体造顔美容鍼®の基礎技術と上級技術を提供</dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 身体の施術：</dt>
+                                    <dd>長野式を共通施術として、スポーツ系、経絡治療など各施術者の得意な施術を組み合わせて提供</dd>
+                                </dl>
+                                <dl>
+                                    <dt>● その他：</dt>
+                                    <dd>お灸、温灸、ホットストーン、ヘッドマッサージ、カッピング</dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 施術コースの長さ：</dt>
+                                    <dd>50分、60分、90分、120分</dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 商品販売：</dt>
+                                    <dd>ローラー鍼、美容鍼シール、フェイスパック</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="jobdetail_text05-r">
+                            <p class="jobdetail-title-r">入社後の研修制度</p>
+                            <div class="jobdetail-p04">
+                                <p>入社後、はじめに一ヶ月程度の時間をかけて先輩スタッフの「補助施術」に入るための研修を行います。</p>
+                                <p>補助施術者として業務に当たりながら、自分でお客様を担当できるようになるための美容鍼の技術研修を行い、岡本院長も週に1回～2回ほど直接マンツーマンで指導します。</p>
+                                <p>お顔の施術を担当できるようになるまで、おおよそ3か月～5か月くらい。<br>顔鍼デビューしたあとは、今度は全身治療を担当できるようになるための研修を行います。</p>
+                                <p>すべてのお客様を担当できるようになるには、その方の経験や努力によりますが、早い方で4か月、長い方で1年くらいかかります。入社後の1年間は研修以外に社内試験もあるので、とても忙しい毎日です。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="jobdetail-tit-06">ハリコとハリオの直撃取材レポート！</h4>
+                    <div class="jobdetail-all01">
+                        <div class="jobdetail01-l">
+                            <p class="jobdetail-tit03">院長先生の印象</p>
+                            <p>1000人以上の鍼灸師に美容鍼の指導を続けてこられた岡本院長。スッキリと張りのある聞き取りやすい声で、優しくお話してくださいました。</p>
+                            <p>印象的だったのは表情の豊かさ！</p>
+                            <p>「土日は閉店が早いので…」とのコメントに、「お休みの日は営業時間を長くしないのですか？」と伺ったら、「労働時間が増えちゃいますから！ウチ、ホワイト企業なんです♡」と女子高生のような笑顔。</p>
+                            <p>一流の技術を身に着けるうえで重要な「目標となる人」として、多数の鍼灸師さんたちを惹きつけてこられた魅力を感じました！</p>
+                        </div>
+                        <div class="jobdetail01-r">
+                            <p class="jobdetail-tit03">この店舗に向いている人／向いていない人</p>
+                            <p class="jobdetail-orange">● 向いている人：</p>
+                            <p>美容鍼灸技術を極めたい方はもちろん、技術以外にも接遇やサービス面でもスキルを磨きたいという方に非常に向いています。</p>
+                            <p>昇格のための試験があるので、一つ一つ課題をクリアしていく方に向いている職場と言えるでしょう。</p>
+                            <p>外国人のお客様もいらっしゃるので、英語を使いたい・学びたいという方にもおすすめです。</p>
+                            <p class="jobdetail-mb01">また成果報酬型の給与体系を望む方にも向いています。</p>
+                            <p class="jobdetail-orange">● 向いていない人：</p>
+                            <p>1日の施術数はあまり多くありません。たくさんの施術をこなしたいという方には向いていないでしょう。</p>
+                            <p>また、社内試験があるので、テスト勉強などは苦手という方にはおすすめできません。</p>
+                            <p>入社後すぐに施術デビューしたいという方にも不向きです。</p>
+                        </div>
+                    </div>
+
+                    <h4 class="jobdetail-tit-07">募集要項</h4>
+                    <table class="jobdetail_tbl-l">
+                        <tr>
+                            <th>募集職種</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>応募資格</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>雇用形態</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>試用期間</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>必要経験</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>勤務時間</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>休日/休暇</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                    </table>
+                    <table class="jobdetail_tbl-r">
+                        <tr>
+                            <th>給与/年収例</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>各種手当</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>昇給 / 賞与</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>社会保険</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>交通費</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>その他制度</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                        <tr>
+                            <th>学生バイト</th>
+                            <td>テキストテキストテキストテキスト</td>
+                        </tr>
+                    </table>
+                    <table class="jobdetail_tbl-org jobdetail-mbt01">
+                        <tr>
+                            <th>勤務地</th>
+                            <td>
+                                <p class="jobdetail_tblp"> 麻布ハリーク 本店<br><a href="#" target="_blank" class="jobdetail-textpup">〒106-0045  東京都港区麻布十番<br>1-10-3 モンテプラザ301</a></p>
+                                <p class="jobdetail_tblp"> 麻布ハリーク 新宿店<br><a href="#" target="_blank" class="jobdetail-textpup">〒160-0022 新宿区新宿2-5-2<br>フォーチュンコート新宿御苑前402</a></p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h4 class="jobdetail-tit-10">店舗基本情報</h4>
+                    <table class="jobdetail_tbl-org jobdetail_mbt02">
+                        <tr>
+                            <th>店舗名</th>
+                            <td>麻布ハリーク</td>
+                        </tr>
+                        <tr>
+                            <th>店舗HP</th>
+                            <td><a href="http://harieq.com/" target="_blank" class="jobdetail-textpup">http://harieq.com/</a></td>
+                        </tr>
+                        <tr>
+                            <th>施設形態</th>
+                            <td>独立店舗型サロン</td>
+                        </tr>
+                        <tr>
+                            <th>店舗代表者名</th>
+                            <td>岡本　真理</td>
+                        </tr>
+                        <tr>
+                            <th>在籍鍼灸師数</th>
+                            <td>10名</td>
+                        </tr>
+                        <tr>
+                            <th>店舗所在地</th>
+                            <td>
+                                <p class="jobdetail_tblp"> 麻布ハリーク 本店<br><a href="#" target="_blank" class="jobdetail-textpup">〒106-0045  東京都港区麻布十番<br>1-10-3 モンテプラザ301</a></p>
+                                <p class="jobdetail_tblp"> 麻布ハリーク 新宿店<br><a href="#" target="_blank" class="jobdetail-textpup">〒160-0022 新宿区新宿2-5-2<br>フォーチュンコート新宿御苑前402</a></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>運営会社名</th>
+                            <td>Do Oriented株式会社</td>
+                        </tr>
+                        <tr>
+                            <th>運営会社HP</th>
+                            <td><a href="http://harieq.com/" target="_blank" class="jobdetail-textpup">http://harieq.com/</a></td>
+                        </tr>
+                        <tr>
+                            <th>会社代表者名</th>
+                            <td>川畑　充弘</td>
+                        </tr>
+                        <tr>
+                            <th>本社所在地</th>
+                            <td><p class="jobdetail_tblp"> 麻布ハリーク 本店<br><a href="#" target="_blank" class="jobdetail-textpup">〒106-0045  東京都港区麻布十番<br>1-10-3 モンテプラザ301</a></p></td>
+                        </tr>
+                    </table>
+                    <h4 class="jobdetail-tit-11">店舗詳細データ</h4>
+                    <div class="jobdetail-allbl-02">
+                        <div class="jobdetail-block-02">
+                            <p class="jobdetail-tit04">新卒と中途の割合は？</p>
+                            <span class="jobdetail-icon-01"></span>
+                            <p class="jobdetail-p02">新卒<span class="jobdetail-font36">30</span>%：中途<span class="jobdetail-font36">70</span>%</p>
+                        </div>
+                        <div class="jobdetail-block-02">
+                            <p class="jobdetail-tit04">女性と男性の割合は？</p>
+                            <span class="jobdetail-icon-02"></span>
+                            <p class="jobdetail-p02">女性<span class="jobdetail-font36">90</span>%：男性<span class="jobdetail-font36">10</span>%</p>
+                        </div>
+                        <div class="jobdetail-block-02">
+                            <p class="jobdetail-tit04">顧客の年代</p>
+                            <span class="jobdetail-icon-01"></span>
+                            <p class="jobdetail-p02"><span class="jobdetail-font36">30</span>代〜<span class="jobdetail-font36">50</span>代が多い</p>
+                        </div>
+                        <div class="jobdetail-block-02">
+                            <p class="jobdetail-tit04">顧客の男女比</p>
+                            <span class="jobdetail-icon-02"></span>
+                            <p class="jobdetail-p02">女性<span class="jobdetail-font36">80</span>%：男性<span class="jobdetail-font36">20</span>%</p>
+                        </div>
+                    </div>
+                    <div class="jobdetail-allbl-03">
+                        <div class="jobdetail-block-03">
+                            <p class="jobdetail-tit04">施術者1名あたりの<br class="smp">１日の施術数</p>
+                            <span class="jobdetail-icon-01"></span>
+                            <p class="jobdetail-p02">平均<span class="jobdetail-font36">5</span>名最大<span class="jobdetail-font36">10</span>名</p>
+                        </div>
+                        <div class="jobdetail-block-03">
+                            <p class="jobdetail-tit04">美容鍼が含まれる<br class="smp">メニュー割合</p>
+                            <span class="jobdetail-icon-02"></span>
+                            <p class="jobdetail-p02">施術全体の<span class="jobdetail-font36">75</span>%</p>
+                        </div>
+                        <div class="jobdetail-block-03">
+                            <p class="jobdetail-tit04">美容鍼メニューの内訳</p>
+                            <span class="jobdetail-icon-01"></span>
+                            <div class="jobdetail-tblvertic">
+                                <div class="jobdetail-blsmall">
+                                    <p class="jobdetail-bg01">顔メイン</p>
+                                    <p class="jobdetail-font41">30<span class="jobdetail-font21">%</span></p>
+                                </div>
+                                <div class="jobdetail-blsmall">
+                                    <p class="jobdetail-bg01">顔＋体<br>(パーツ治療)</p>
+                                    <p class="jobdetail-font41">30<span class="jobdetail-font21">%</span></p>
+                                </div>
+                                <div class="jobdetail-blsmall">
+                                    <p class="jobdetail-bg01">顔+ 体<br>(全身治療)</p>
+                                    <p class="jobdetail-font41">30<span class="jobdetail-font21">%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jobdetail-block-03">
+                            <p class="jobdetail-tit04">新卒者が施術デビューするまでの期間</p>
+                            <span class="jobdetail-icon-02"></span>
+                            <p class="jobdetail-p03">平均<span class="jobdetail-font43">1年3</span>ヶ<span class="jobdetail-font43">月</span></p>
+                        </div>
+                    </div>
+                    <ul class="jobdetail-chart">
+                        <li>
+                            <p class="__title">店内の雰囲気</p>
+                            <p class="__desc">
+                                <img class="pc" src="images/jobdetail_fix01.png" alt="" />
+                                <img class="smp" src="images/jobdetail_fix01-smp.png" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="__title">ルール</p>
+                            <p class="__desc">
+                                <img class="pc" src="images/jobdetail_fix04.png" alt="" />
+                                <img class="smp" src="images/jobdetail_fix04-smp.png" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="__title">接客</p>
+                            <p class="__desc">
+                                <img class="pc" src="images/jobdetail_fix02.png" alt="" />
+                                <img class="smp" src="images/jobdetail_fix02-smp.png" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="__title">施術内容</p>
+                            <p class="__desc">
+                                <img class="pc" src="images/jobdetail_fix05.png" alt="" />
+                                <img class="smp" src="images/jobdetail_fix05-smp.png" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="__title">上下関係</p>
+                            <p class="__desc">
+                                <img class="pc" src="images/jobdetail_fix03.png" alt="" />
+                                <img class="smp" src="images/jobdetail_fix03-smp.png" alt="" />
+                            </p>
+                        </li>
+                        <li>
+                            <p class="__title">社内イベント</p>
+                            <p class="__desc">
+                                <img class="pc" src="images/jobdetail_fix06.png" alt="" />
+                                <img class="smp" src="images/jobdetail_fix06-smp.png" alt="" />
+                            </p>
+                        </li>
+                    </ul><!-- end jobdetail-chart -->
+
+                    <h4 class="jobdetail-tit-20">応募の流れ</h4>
+                    <div class="jobdetail-block-04">
+                        <p class="jobdetail_text-08">選考ステップ</p>
+                            <div class="jobdetail-text09-all">
+                            <p class="jobdetail-text09">① 本ページからエントリーしてください</p>
+                            <p class="jobdetail-text09">②書類選考：あり<span class="jobdetail_font20">（書類到着後●日以内に結果通知）</span></p>
+                            <p class="jobdetail-text09">③面接：面接１回</p>
+                            <p class="jobdetail-text09">④結果の通知</p>
+                        </div>
+                        <div class="jobdetail-list">
+                            <dl>
+                                <dt>面接会場</dt>
+                                <dd><a href="#">〒106-0045  東京都港区麻布十番　1-10-3 モンテプラザ301</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>面接時間</dt>
+                                <dd>テキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+                            </dl>
+                            <dl>
+                                <dt>見学時間</dt>
+                                <dd>テキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+                            </dl>
+                            <dl>
+                                <dt>対応時間</dt>
+                                <dd>テキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+                            </dl>
+                            <dl>
+                                <dt>持参物</dt>
+                                <dd>テキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+                            </dl>
+                            <dl>
+                                <dt>服装</dt>
+                                <dd>テキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <h4 class="jobdetail-tit-08">この店舗のイベント情報</h4>
+                    <div class="ind_tab02_content">
+                        <div class="item">
+                            <div class="ind_tab02_group">
+                                <table class="ind_tab02_table">
+                                    <tr>
+                                        <th>イベント名</th>
+                                        <td>施術見学会</td>
+                                    </tr>
+                                    <tr>
+                                        <th>日時</th>
+                                        <td>2019年8月1日</td>
+                                    </tr>
+                                    <tr>
+                                        <th>場所</th>
+                                        <td>麻布ハリーク 本店</td>
+                                    </tr>
+                                    <tr>
+                                        <th>定員</th>
+                                        <td>5名</td>
+                                    </tr>
+                                </table>
+                                <div class="ind_tab02_link"><a href="#">イベント参加申し込み</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ind_tab02_group">
+                                <table class="ind_tab02_table">
+                                    <tr>
+                                        <th>イベント名</th>
+                                        <td>施術見学会</td>
+                                    </tr>
+                                    <tr>
+                                        <th>日時</th>
+                                        <td>2019年8月1日</td>
+                                    </tr>
+                                    <tr>
+                                        <th>場所</th>
+                                        <td>麻布ハリーク 本店</td>
+                                    </tr>
+                                    <tr>
+                                        <th>定員</th>
+                                        <td>5名</td>
+                                    </tr>
+                                </table>
+                                <div class="ind_tab02_link"><a href="#">イベント参加申し込み</a></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ind_tab02_group">
+                                <table class="ind_tab02_table">
+                                    <tr>
+                                        <th>イベント名</th>
+                                        <td>施術見学会</td>
+                                    </tr>
+                                    <tr>
+                                        <th>日時</th>
+                                        <td>2019年8月1日</td>
+                                    </tr>
+                                    <tr>
+                                        <th>場所</th>
+                                        <td>麻布ハリーク 本店</td>
+                                    </tr>
+                                    <tr>
+                                        <th>定員</th>
+                                        <td>5名</td>
+                                    </tr>
+                                </table>
+                                <div class="ind_tab02_link"><a href="#">イベント参加申し込み</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="jobdetail-tit-09">条件が似ている求人</h4>
+                    <div class="ind_tab01_content">
+                        <div class="item">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li class="li01">社会保険完備</li>
+                                    <li class="li02">新卒歓迎</li>
+                                    <li class="li02">正社員</li>
+                                    <li class="li03">美容鍼</li>
+                                    <li class="li04">全身治療</li>
+                                    <li class="li05">完全週休２日</li>
+                                </ul>
+                            </div>
+                            <div class="ind_tab02_link01"><a href="#">詳細を見る</a></div>
+                        </div>
+                        <div class="item">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li class="li01">社会保険完備</li>
+                                    <li class="li02">新卒歓迎</li>
+                                    <li class="li02">正社員</li>
+                                    <li class="li03">美容鍼</li>
+                                    <li class="li04">全身治療</li>
+                                    <li class="li05">完全週休２日</li>
+                                </ul>
+                            </div>
+                            <div class="ind_tab02_link01"><a href="#">詳細を見る</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jobdetail_footer-all">
+                    <ul class="jobdetail-footer">
+                        <li><a href="#">見学を希望する</a></li>
+                        <li><a href="#">エントリー</a></li>
+                    </ul>
+                </div>
+                <p class="scroll_top smp">
+                    <a class="scrollTo" href="#outside"><img src="images/jobdetai_scroll.png" alt="" /></a>
+                </p>
+            </div>
+        <!-- InstanceEndEditable -->
+        </div><!--#wrapper-->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="footer_pc pc">
+                    <ul class="foot_menu">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="job.html">注目求人</a></li>
+                        <li><a href="event.html">イベント</a></li>
+                        <li><a href="column.html">コラム</a></li>
+                        <li><a href="#">求人検索</a></li>
+                        <li><a href="howto.html">サイト活用方法</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                    <div class="temp_logo">
+                        <a href="index.html">
+                            <img src="images/foot_logo.png" alt="美容鍼求人サイト" class="pc">
+                            <span class="temp_text01 pc">
+                                <span class="temp_text03">美容鍼・</span>
+                                <span class="temp_text02">美容鍼灸</span>の<br>
+                                シゴトが見つかる！
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="foot_link">
+                        <li><a href="#">掲載希望の治療院様へ</a></li>
+                        <li><a href="#">ご利用規約</a></li>
+                        <li><a href="terms.html">掲載規約</a></li>
+                        <li><a href="privacypolicy.html">個人情報保護方針</a></li>
+                        <li><a href="aboutus.html">運営企業</a></li>
+                    </ul>
+                </div>
+                <ul class="footer_smp smp">
+                    <li class="f_ico01"><a href="#">求人検索</a></li>
+                    <li class="f_ico02"><a href="job.html">注目求人</a></li>
+                    <li class="f_ico03"><a href="event.html">イベント</a></li>
+                    <li class="f_ico04"><a href="column.html">コラム</a></li>
+                </ul>
+                <p class="scroll_top smp"><a class="scrollTo" href="#outside"><img src="images/temp_top.png" alt="" /></a></p>
+            </div>
+            <div class="foot_copyright pc">
+                <p class="container">Copyright © 2019 ハリコとハリオ. All rights reserved</p>
+            </div>
+        </div><!--#footer-->
+
+    </div><!--#outside-->
+
+    <script type="text/javascript" src="js/plugins.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/common.js" charset="UTF-8"></script>
+</body>
+<!-- InstanceEnd --></html>

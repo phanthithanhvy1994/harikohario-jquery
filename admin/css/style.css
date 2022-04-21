@@ -1,0 +1,335 @@
+/* login */
+
+.admin_login {
+    width: 695px;
+    margin: 170px auto 100px;
+}
+
+.admin_login-tit {
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    padding: 13px 0 13px 42px;
+    background: #58585b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ie .admin_login-tit {
+    padding: 17px 0 9px 42px;
+}
+
+.admin_login-form {
+    padding: 67px 0 35px 0;
+    background: #ececec;
+    box-shadow: 0 0 4px #afa4a4;
+}
+
+.admin_login-error {
+    font-size: 17px;
+    color: #ed1c24;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.admin_login-form table tr th {
+    width: 210px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    font-size: 17px;
+    color: #231f20;
+    text-align: right;
+}
+
+.admin_login-form table tr td {
+    padding-bottom: 12px;
+}
+
+.admin_login-form table tr td input {
+    width: 370px;
+}
+
+.admin_submit {
+    clear: both;
+    margin-top: 52px;
+    text-align: center;
+}
+
+.admin_login-error+.admin_submit {
+    margin-top: 20px;
+}
+
+/* userlist */
+
+.userlist {
+    margin-top: 28px;
+}
+
+.table_user {
+    width: 100%;
+    font-size: 14px;
+    color: #414042;
+    line-height: 140%;
+    margin-bottom: 48px;
+}
+
+.table_user td {
+    padding: 14px 0;
+}
+
+.ie .table_user td {
+    padding-top: 17px;
+    padding-bottom: 10px;
+}
+
+.table_user .col-2 {
+    width: 86px;
+    padding-left: 10px;
+}
+
+.table_user .col-3 {
+    width: 49px;
+    text-align: center;
+}
+
+.table_user .col-4 {
+    width: 272px;
+    font-size: 15px;
+    padding-left: 12px;
+}
+
+.table_user .col-4 a,
+.table_user .col-5 a {
+    font-size: 15px;
+}
+
+.table_user .col-5 {
+    width: 276px;
+    font-size: 15px;
+    padding-left: 12px;
+}
+
+.table_user .col-6 {
+    width: 53px;
+    text-align: center;
+}
+
+.table_user .col-7 {
+    width: 140px;
+    padding-left: 12px;
+}
+
+.table_user .col-8 {
+    padding-left: 20px;
+}
+
+/* user detai */
+
+.user_detail {
+    padding-bottom: 70px;
+}
+
+.ud-child_tb .ud-w90 {
+    display: inline-block;
+}
+
+.ud-child_tb {
+    padding: 4px 0;
+}
+
+.ud-w90 {
+    width: 90px;
+}
+
+.ud-w80 {
+    width: 80px;
+}
+
+.ud-w425 {
+    width: 425px;
+}
+
+.ud-w120 {
+    width: 120px;
+}
+
+.user-w500 {
+    width: 500px;
+}
+
+.ud-red {
+    color: red;
+}
+
+/* applicationlist-list  */
+.table_search td span.checkbox {
+    display: inline-block;
+}
+
+.ie .table_search td span.checkbox {
+    padding-top: 7px;
+}
+
+.table_search td span.checkbox label {
+    padding-left: 20px !important;
+}
+
+.table_search td input.date_picker {
+    width: 126px;
+    background: url(../images/icon-date.png) center right 8px no-repeat;
+    background-color: white;
+}
+
+.w-135 {
+    width: 135px;
+}
+
+.p-7 {
+    padding: 7px;
+}
+
+.table_application {
+    font-size: 14px;
+}
+
+.table_application .col-2 {
+    width: 86px;
+    padding-left: 10px;
+}
+
+.table_application .col-3 {
+    width: 49px;
+    text-align: center;
+}
+
+.table_application .col-4 {
+    width: 187px;
+    padding-left: 8px;
+}
+
+.table_application .col-5 {
+    width: 134px;
+    text-align: center;
+    padding: 6px 0 4px;
+}
+
+.table_application .col-5-s {
+    padding: 8px 0 1px;
+    text-align: center;
+    line-height: 125%;
+}
+
+.table_application .col-6 {
+    width: 90px;
+    text-align: center;
+}
+
+.table_application .col-7 {
+    width: 70px;
+    text-align: center;
+}
+
+.table_application .col-8 {
+    width: 143px;
+    padding-left: 12px;
+}
+
+.table_application .col-9 {
+    width: 120px;
+    padding-left: 12px;
+}
+
+.table_application .col-10 {
+    padding-left: 20px;
+}
+
+.table_application td {
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+
+/* column list */
+
+.columnlist .table_search-submit {
+    margin: 45px 0 30px;
+}
+
+.table_column .col-2 {
+    padding-left: 10px;
+    width: 85px;
+}
+
+.table_column .col-3 {
+    text-align: center;
+    width: 45px;
+}
+
+.table_column .col-4 {
+    padding-left: 10px;
+    width: 325px;
+}
+
+.table_column .col-5 {
+    padding-left: 15px;
+    width: 255px;
+}
+
+.table_column .col-6 {
+    padding-left: 20px;
+    width: 165px;
+}
+
+.table_column .col-7 {
+    padding-left: 20px;
+}
+
+/* columndetail */
+.w200{
+    width: 200px;
+}
+
+.w635{
+    width: 635px;
+}
+
+textarea{
+    padding: 6px 0;
+    width: auto;
+    max-width: 100%;
+    text-indent: 1em;
+    position: relative;
+    border-radius: 10px;
+    min-height: 160px;
+}
+
+.column_detail .table_detail .tox-tinymce{
+    border-radius: 10px;
+}
+
+.column_detail .table_detail .tox-statusbar{
+    display: none;
+}
+
+.column_detail .table_detail{
+    margin-bottom: 25px;
+}
+
+.column_detail .btn_file{
+    display: inline-block;
+    width: 73px;
+    margin-left: 10px;
+    text-align: center;
+    background: #b9dde0;
+    color: #414042;
+    border-radius: 10px;
+    padding: 7px 0 6px;
+}
+
+.column_detail .table_detail th{
+    vertical-align: top;
+}
+
+.column_detail{
+    padding-bottom: 60px;
+}

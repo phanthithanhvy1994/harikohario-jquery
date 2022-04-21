@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ja"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!-- InstanceBeginEditable name="page-title" -->
+<title>求人検索｜ハリコとハリオ｜美容鍼求人サイト</title>
+<!-- S.E.O -->
+<meta name="description" content="ハリコとハリオ,美容鍼求人サイト" />
+<meta name="keywords" content="ハリコとハリオ,美容鍼求人サイト" />
+<!-- InstanceEndEditable -->
+<meta name="author" content="ハリコとハリオ" />
+<meta name="copyright" content="ハリコとハリオ" />
+<meta name="robots" content="ALL" />
+<!-- favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+<!--style-->
+<link type="text/css" rel="stylesheet" href="css/plugins.css" />
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/media_query.css" />
+<!--jquery libs-->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
+<!-- InstanceBeginEditable name="page-custom" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body class="subpage">
+
+    <div id="outside">
+
+        <!-- header -->
+        <div id="header">
+            
+            <div id="header_pc">
+                <div class="head_linktop">
+                    <div class="container">
+                        <ul>
+                            <li><a href="#">ご利用規約</a></li>
+                            <li><a href="#">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <h1 class="head_logo">
+                        <a href="index.html">
+                            <img class="_logo" src="images/tem_logo.png" alt="ハリコとハリオ/美容鍼求人サイト">
+                            <span class="_txt">
+                                <span class="c1">美容鍼・</span>
+                                <span class="c2">美容鍼灸</span>の<br>
+                                シゴトが見つかる！
+                            </span>
+                        </a>
+                    </h1>
+                    <div class="head_boxnavi">
+                        <div class="head_info">                        
+                            <p>こんにちは、ゲストさん</p>
+                            <ul>
+                                <li><a href="#">最近見た求人を見る</a></li>
+                                <li><a href="#">会員登録 / ログイン</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="head_info">                        
+                            <p><a href="#">こんにちは、吉田さん</a></p>
+                            <ul>
+                                <li><a href="#">最近見た求人を見る</a></li>
+                                <li><a href="#">履歴書を編集する</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="head_navi">
+                            <ul>
+                                <li><a class="active" href="job.html">注目求人</a></li>
+                                <li><a href="event.html">イベント</a></li>
+                                <li><a href="column.html">コラム</a></li>
+                                <li><a href="job.html#search_job">求人検索</a></li>
+                                <li><a href="howto.html">活用方法</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="head_link"><a href="#">掲載希望<br>治療院様へ</a></p>
+                </div>
+            </div>
+
+            <div id="header_smp">
+                <div class="header-menu">
+                    <h1>
+                        <a href="index.html">
+                            <span>ハリコとハリオ/美容鍼求人サイト</span>
+                            <img src="images/temp_logosmp.png" alt="美容鍼求人サイト">
+                        </a>
+                    </h1>
+                    <div class="menu">
+                        <ul class="menu__link">
+                            <li><a href="login.html">ログイン</a></li>
+                            <li><a href="memberform.html">会員登録</a></li>
+                        </ul>
+                        <div class="menu__hamburger">
+                            <span class="text_menu">メニュー</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-panel">
+                    <div class="line">
+                        <p class="line__title"><span>カンタン会員登録でラクラク求人探し！</span></p>
+                        <p class="line__btn"><a href="#"><span>LINE&nbsp;で登録</span></a></p>
+                        <p class="line__link"><a href="#">メールアドレスで登録</a></p>
+                    </div>
+                    <!-- <p class="header-hello"><span>こんにちは、吉田さん</span></p> -->
+                    <ul class="navbox-favorite">
+                        <li><a class="nav__icon01" href="job.html">注目求人</a></li>
+                        <li><a class="nav__icon02" href="event.html">イベント</a></li>
+                        <li><a class="nav__icon03" href="column.html">コラム</a></li>
+                    </ul>
+                    <!-- <ul class="navbox-favorite __login">
+                        <li><a class="nav__icon08" href="#">最近見た<br>求人を見る</a></li>
+                        <li><a class="nav__icon09" href="#">履歴書を<br>編集する</a></li>
+                        <li><a class="nav__icon10" href="#">登録情報を<br>変更する</a></li>
+                    </ul> -->
+                    <ul class="navbox">
+                        <li><a class="nav__icon04" href="job.html#search_job">求人検索</a></li>
+                        <li><a class="nav__icon05" href="#">最近見た求人</a></li>
+                        <li><a class="nav__icon06" href="howto.html">サイト活用方法</a></li>
+                        <li><a class="nav__icon07" href="aboutus.html">運営企業</a></li>
+                        <!-- <li><a class="nav__icon01" href="../job.html">注目求人</a></li>
+                        <li><a class="nav__icon02" href="../event.html">イベント</a></li>
+                        <li><a class="nav__icon03" href="../column.html">コラム</a></li>
+                        <li><a class="nav__icon04" href="../job.html#search_job">求人検索</a></li>
+                        <li><a class="nav__icon06" href="../howto.html">サイト活用方法</a></li>
+                        <li><a class="nav__icon07" href="../aboutus.html">運営企業</a></li> -->
+                    </ul>
+                    <div class="header-job">
+                        <p class="navbox-job__title">求人希望企業の方へ<span class="-job_icon"></span></p>
+                        <ul class="navbox-job__link">
+                            <li><a href="terms.html">ご利用規約</a></li>
+                            <li><a href="published.html">掲載規約</a></li>
+                            <li><a href="privacypolicy.html">個人情報保護方針</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div><!--#header-->
+
+        <!-- content -->
+        <div id="wrapper" style="min-height: 500px">
+        <!-- InstanceBeginEditable name="page-content" -->
+            
+            <h2 id="search_job" class="screen_title04">求人検索</h2>
+                
+            <div class="container_index">
+                <h3 class="title_01">検索した条件</h3>
+                <div class="search_condition">
+                    <ul>
+                        <li class="search_c01">
+                            <span class="s1">勤務地</span>
+                            <span class="s2">すべてのエリア</span>
+                        </li>
+                        <li class="search_c02">
+                            <span class="s1">雇用形態</span>
+                            <span class="s2">正社員</span>
+                        </li>
+                        <li class="search_c03">
+                            <span class="s1">雇用条件</span>
+                            <span class="s2 ">美容鍼未経験OK, 新卒OK, ボーナスあり,完全週休2日,社会保険完備</span>
+                        </li>
+                        <li class="search_c03">
+                            <span class="s1">休日休暇</span>
+                            <span class="s2">指定なし</span>
+                        </li>
+                        <li class="search_c03">
+                            <span class="s1">施術メニュー</span>
+                            <span class="s2">指定なし</span>
+                        </li>
+                        <li class="search_c03">
+                            <span class="s1">その他</span>
+                            <span class="s2">指定なし</span>
+                        </li>
+                    </ul>
+                    <p class="btn_box"><a data-fancybox data-src="#hidden-content" href="javascript:;">検索条件を変更する</a></p>
+                    <div class="search_box" id="hidden-content">
+                        <p class="title">検索条件</p>
+                        <div class="search_box_row">
+                            <table class="search_box_tb">
+                                <tr>
+                                    <th>勤務地</th>
+                                    <td>
+                                        <p class="accordion">すべてのエリア</p>
+                                        <div class="panel">
+                                            <div class="panel_content">
+                                                abc
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>雇用形態</th>
+                                    <td>
+                                        <p class="accordion">正社員</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>雇用条件</th>
+                                    <td>
+                                        <p class="accordion active">
+                                            <span class="pc">美容鍼未経験OK, 新卒OK,社会保険完, 完全週休2日</span>
+                                            <span class="smp">美容鍼未経験OK, 新卒OK, ボー…</span>
+                                        </p>
+                                        <div class="panel active">
+                                            <div class="panel_content">
+                                                <ul>
+                                                    <li><label><input type="checkbox" value="美容鍼未経験ＯＫ">美容鍼未経験ＯＫ</label></li>
+                                                    <li><label><input type="checkbox" value="新卒ＯＫ">新卒ＯＫ</label></li>
+                                                    <li><label><input type="checkbox" value="中途ＯＫ">中途ＯＫ</label></li>
+                                                    <li><label><input type="checkbox" value="ブランクＯＫ">ブランクＯＫ</label></li>
+                                                    <li><label><input type="checkbox" value="ママさん歓迎">ママさん歓迎</label></li>
+                                                    <li><label><input type="checkbox" value="男性歓迎">男性歓迎</label></li>
+                                                    <li><label><input type="checkbox" value="４０代歓迎">４０代歓迎</label></li>
+                                                    <li><label><input type="checkbox" value="５０代歓迎">５０代歓迎</label></li>
+                                                    <li><label><input type="checkbox" value="社会保険完備">社会保険完備</label></li>
+                                                    <li><label><input type="checkbox" value="交通費全額支給">交通費全額支給</label></li>
+                                                    <li><label><input type="checkbox" value="交通費一部支給">交通費一部支給</label></li>
+                                                    <li><label><input type="checkbox" value="完全週休２日">完全週休２日</label></li>
+                                                    <li><label><input type="checkbox" value="住宅手当あり">住宅手当あり</label></li>
+                                                    <li><label><input type="checkbox" value="ボーナスあり">ボーナスあり</label></li>
+                                                    <li><label><input type="checkbox" value="歩合あり">歩合あり</label></li>
+                                                    <li><label><input type="checkbox" value="店長候補採用">店長候補採用</label></li>
+                                                    <li><label><input type="checkbox" value="新卒初任給２０万以上">新卒初任給２０万以上</label></li>
+                                                    <li><label><input type="checkbox" value="新卒初任給２３万以上">新卒初任給２３万以上</label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>休日休暇</th>
+                                    <td><p class="accordion">指定なし</p></td>
+                                </tr>
+                                <tr>
+                                    <th>施術メニュー</th>
+                                    <td><p class="accordion">指定なし</p></td>
+                                </tr>
+                                <tr>
+                                    <th>その他</th>
+                                    <td><p class="accordion">指定なし</p></td>
+                                </tr>
+                            </table>
+                            <p class="btn_link"><a href="#">この条件で検索する</a></p>
+                            <p class="btn_close"><a href="#" data-fancybox-close="">閉じる</a></p>
+                            <!-- <p class="btn_back smp"><a href="#">OK</a></p> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="title_01 smp-fw-normal">検索結果件数：<span class="smp-fw-bold">12</span>件</h3>
+                <div id="job_list">
+                    <div class="ind_tab01_content">
+                        <div class="item">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">麻布ハリーク（AZABU HARIEQ）</p>
+                                <div class="ind_tab01_img"><img src="images/job_ind_tab01_smp_03.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01">優しい鍼で結果を出す<br>
+                                    立体造顔美容鍼®の美容鍼灸サロン</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                                <div class="smp">
+                                    <p class="ind_tab01_title">先輩スタッフに聞いてみました！</p>
+                                    <div class="ind_tab01_info">
+                                        <p class="_title"><span>ひとことで、麻布ハリークってどんな職場？</span></p>
+                                        <ul class="_list">
+                                            <li>・お客様と同じくらい仲間を大切にする職場（高橋）</li>
+                                            <li>・美容鍼灸を極めたい人が働いている職場（牧野）</li>
+                                            <li>・お客様と同じくらい仲間を大切にする職場（高橋）</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="ind_tab01_btn smp"><a href="#">詳細を見る</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                                <p class="ind_tab01_btn smp"><a href="#">詳細を見る</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                                <p class="ind_tab01_btn smp"><a href="#">詳細を見る</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                                <p class="ind_tab01_btn smp"><a href="#">詳細を見る</a></p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                                <p class="ind_tab01_btn smp"><a href="#">詳細を見る</a></p>
+                            </div>
+                        </div>
+                        <div class="item pc">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item pc">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item pc">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item pc">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item pc">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item pc">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item pc">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item pc">
+                            <ul class="ind_tab01_txt_icon">
+                                <li>2020新卒</li>
+                                <li>2021新卒</li>
+                                <li>中途</li>
+                            </ul>
+                            <div class="ind_tab01_link">
+                                <p class="item_title">HARIMERRY（ハリメリー）</p>
+                                <div class="ind_tab01_img"><img src="images/ind_tab01_img.jpg" alt="" /></div>
+                                <a href="#"></a>
+                            </div>
+                            <div class="ind_tab01_group">
+                                <p class="item_txt01 pc">立体造顔美容鍼®とボディメイクで可愛いを創るサロンです。</p>
+                                <dl>
+                                    <dt>給与</dt>
+                                    <dd>月給：◯◯◯◯◯円〜</dd>
+                                    <dt class="dt02">勤務地</dt>
+                                    <dd>新宿（新宿医療専門学校内）</dd>
+                                </dl>
+                                <ul class="ind_tab01_list">
+                                    <li><img src="images/ind_tag_07.png" alt="社会保険完備"></li>
+                                    <li><img src="images/ind_tag_08.png" alt="新卒歓迎"></li>
+                                    <li><img src="images/ind_tag_11.png" alt="正社員"></li>
+                                    <li><img src="images/ind_tag_10.png" alt="美容鍼"></li>
+                                    <li><img src="images/ind_tag_09.png" alt="全身治療"></li>
+                                    <li><img src="images/ind_tag_06.png" alt="完全週休２日"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="job-numbers-list smp-fw-normal"><span class="pc">36</span><span class="smp smp-fw-bold">12</span>件中<span class="pc">1〜12件</span><span class="smp smp-fw-bold">1〜5件</span>を表示しています。</p>
+                    <p class="job-pager-list">
+                        <span class="job-numbers prev">&lt;&lt;前へ</span>
+                        <span class="job-numbers current" href="#">1</span>
+                        <a class="job-numbers" href="#">2</a>
+                        <a class="job-numbers" href="#">3</a>
+                        <a class="job-numbers next" href="#">次へ&gt;&gt;</a>
+                    </p>
+                </div>
+            </div>
+
+        <!-- InstanceEndEditable -->
+        </div><!--#wrapper-->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="footer_pc pc">
+                    <ul class="foot_menu">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="job.html">注目求人</a></li>
+                        <li><a href="event.html">イベント</a></li>
+                        <li><a href="column.html">コラム</a></li>
+                        <li><a href="#">求人検索</a></li>
+                        <li><a href="howto.html">サイト活用方法</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                    <div class="temp_logo">
+                        <a href="index.html">
+                            <img src="images/foot_logo.png" alt="美容鍼求人サイト" class="pc">
+                            <span class="temp_text01 pc">
+                                <span class="temp_text03">美容鍼・</span>
+                                <span class="temp_text02">美容鍼灸</span>の<br>
+                                シゴトが見つかる！
+                            </span>
+                        </a>
+                    </div>
+                    <ul class="foot_link">
+                        <li><a href="#">掲載希望の治療院様へ</a></li>
+                        <li><a href="#">ご利用規約</a></li>
+                        <li><a href="terms.html">掲載規約</a></li>
+                        <li><a href="privacypolicy.html">個人情報保護方針</a></li>
+                        <li><a href="aboutus.html">運営企業</a></li>
+                    </ul>
+                </div>
+                <ul class="footer_smp smp">
+                    <li class="f_ico01"><a href="#">求人検索</a></li>
+                    <li class="f_ico02"><a href="job.html">注目求人</a></li>
+                    <li class="f_ico03"><a href="event.html">イベント</a></li>
+                    <li class="f_ico04"><a href="column.html">コラム</a></li>
+                </ul>
+                <p class="scroll_top smp"><a class="scrollTo" href="#outside"><img src="images/temp_top.png" alt="" /></a></p>
+            </div>
+            <div class="foot_copyright pc">
+                <p class="container">Copyright © 2019 ハリコとハリオ. All rights reserved</p>
+            </div>
+        </div><!--#footer-->
+
+    </div><!--#outside-->
+
+    <script type="text/javascript" src="js/plugins.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="js/common.js" charset="UTF-8"></script>
+</body>
+<!-- InstanceEnd --></html>
